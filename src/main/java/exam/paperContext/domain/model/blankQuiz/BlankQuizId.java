@@ -15,10 +15,6 @@ import java.util.UUID;
 public class BlankQuizId implements ValueObject<BlankQuizId> {
     private final String id;
 
-    public BlankQuizId() {
-        id = null;
-    }
-
     public static BlankQuizId nextId() {
         return new BlankQuizId("blankQuiz-" + UUID.randomUUID().toString());
     }
